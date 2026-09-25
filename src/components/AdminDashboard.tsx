@@ -83,7 +83,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 Master Barber Passkey Bypass (royal2026)
               </span>
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-              <span className="text-[10px] font-mono text-emerald-400">Chairs Active</span>
+              <span className="text-xs font-semibold tracking-wider font-mono text-emerald-400">Chairs Active</span>
             </div>
             <h1 className="font-serif text-2xl sm:text-3xl font-light text-white tracking-wide mt-1.5">
               ROYAL APEX <span className="text-stone-500 italic font-normal text-xl sm:text-2xl">Atelier Master Control</span>
@@ -100,7 +100,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             </button>
             <button
               onClick={onClose}
-              className="flex items-center gap-1.5 px-4 py-2 bg-stone-100 hover:bg-white text-stone-950 font-semibold rounded uppercase tracking-wider transition-all cursor-pointer"
+              className="flex items-center gap-1.5 px-5 py-3 min-h-[44px] bg-stone-100 hover:bg-white text-stone-950 font-semibold rounded uppercase tracking-wider transition-all cursor-pointer"
             >
               <LogOut size={14} />
               <span>Exit to Salon</span>
@@ -118,7 +118,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             <div className="text-2xl font-serif text-white font-light mt-1">
               ${totalWeeklyRevenue.toLocaleString()}
             </div>
-            <div className="flex items-center gap-1 text-[10px] font-mono text-emerald-400">
+            <div className="flex items-center gap-1 text-xs font-semibold tracking-wider font-mono text-emerald-400">
               <TrendingUp size={11} />
               <span>+14.2% vs last week</span>
             </div>
@@ -132,7 +132,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             <div className="text-2xl font-serif text-white font-light mt-1">
               94.2% Booked
             </div>
-            <div className="text-[10px] font-mono text-stone-500">
+            <div className="text-xs font-semibold tracking-wider font-mono text-stone-500">
               4 Chairs Operating (Wed-Sat Peak)
             </div>
           </div>
@@ -145,7 +145,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             <div className="text-2xl font-serif text-white font-light mt-1">
               188 Patrons
             </div>
-            <div className="text-[10px] font-mono text-gold-400">
+            <div className="text-xs font-semibold tracking-wider font-mono text-gold-400">
               Bi-weekly standing chair reservations
             </div>
           </div>
@@ -158,7 +158,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
             <div className="text-2xl font-serif text-white font-light mt-1">
               {appointments.length} Total Cuts
             </div>
-            <div className="text-[10px] font-mono text-emerald-400">
+            <div className="text-xs font-semibold tracking-wider font-mono text-emerald-400">
               {appointments.filter(a => a.status === 'confirmed').length} Confirmed • 0 No-Shows
             </div>
           </div>
@@ -185,7 +185,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                 />
               </div>
 
-              <div className="flex border border-stone-800 rounded p-0.5 bg-stone-900/40 text-[10px] font-mono">
+              <div className="flex border border-stone-800 rounded p-0.5 bg-stone-900/40 text-xs font-semibold tracking-wider font-mono">
                 {(['all', 'confirmed', 'pending', 'completed'] as const).map(t => (
                   <button
                     key={t}
@@ -203,7 +203,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
           <div className="overflow-x-auto">
             <table className="w-full text-left text-xs font-mono">
               <thead>
-                <tr className="border-b border-stone-900 text-[10px] text-stone-500 uppercase tracking-widest">
+                <tr className="border-b border-stone-900 text-xs font-semibold tracking-wider text-stone-500 uppercase tracking-widest">
                   <th className="pb-3 font-normal">Patron Details</th>
                   <th className="pb-3 font-normal">Grooming Service</th>
                   <th className="pb-3 font-normal">Master Specialist</th>
@@ -225,7 +225,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                     <tr key={appt.id} className="hover:bg-stone-900/30 transition-colors">
                       <td className="py-3.5 pr-4">
                         <div className="font-sans font-medium text-stone-200">{appt.clientName}</div>
-                        <div className="text-[10px] text-stone-500">{appt.clientPhone}</div>
+                        <div className="text-xs font-semibold tracking-wider text-stone-500">{appt.clientPhone}</div>
                         {appt.notes && (
                           <div className="text-[9px] text-[#D4AF37]/80 italic mt-0.5 max-w-xs truncate">
                             Note: {appt.notes}
@@ -240,7 +240,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
                       </td>
                       <td className="py-3.5 pr-4 text-stone-300">
                         <div>{appt.date}</div>
-                        <div className="text-[10px] text-stone-500">{appt.time}</div>
+                        <div className="text-xs font-semibold tracking-wider text-stone-500">{appt.time}</div>
                       </td>
                       <td className="py-3.5 pr-4 font-semibold text-stone-200">
                         ${appt.price}

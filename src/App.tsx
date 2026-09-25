@@ -381,7 +381,7 @@ export default function App() {
             <a href="#contact" className="text-xs uppercase tracking-widest font-medium hover:text-charcoal/70 transition-colors">Contact</a>
             <button
               onClick={() => setIsAdminPassModalOpen(true)}
-              className="text-[10px] font-mono uppercase tracking-widest px-2.5 py-1 rounded bg-amber-500/10 text-amber-700 border border-amber-500/30 hover:bg-amber-500 hover:text-black font-semibold transition-all flex items-center space-x-1"
+              className="text-xs font-semibold tracking-wider font-mono uppercase tracking-widest px-2.5 py-1 rounded bg-amber-500/10 text-amber-700 border border-amber-500/30 hover:bg-amber-500 hover:text-black font-semibold transition-all flex items-center space-x-1"
             >
               <span>⚡ ADMIN PASS</span>
             </button>
@@ -392,14 +392,14 @@ export default function App() {
             {/* Live Indicator */}
             <div className="flex items-center space-x-2">
               <span className={`inline-block w-1.5 h-1.5 rounded-full ${isOpenNow ? 'bg-emerald-500 animate-pulse' : 'bg-amber-500'}`}></span>
-              <span className="text-[10px] uppercase tracking-widest text-charcoal/60 font-medium">
+              <span className="text-xs font-semibold tracking-wider uppercase tracking-widest text-charcoal/60 font-medium">
                 {isOpenNow ? 'Open Now' : 'By Appt Only'}
               </span>
             </div>
             <button
               onClick={handleBookNowClick}
               id="cta-nav-book"
-              className="bg-charcoal text-alabaster border border-charcoal hover:bg-alabaster hover:text-charcoal px-6 py-2.5 text-xs font-sans uppercase tracking-widest font-medium transition-all duration-300 shadow-sm active:scale-98"
+              className="bg-charcoal text-alabaster border border-charcoal hover:bg-alabaster hover:text-charcoal px-6 py-2.5 text-base font-semibold min-h-[44px] font-sans uppercase tracking-widest font-medium transition-all duration-300 shadow-sm active:scale-98"
             >
               Book Appointment
             </button>
@@ -415,7 +415,7 @@ export default function App() {
             </button>
             <button 
               onClick={handleBookNowClick}
-              className="bg-charcoal text-alabaster px-3 py-1.5 text-[10px] font-sans uppercase tracking-widest font-medium transition-transform active:scale-95"
+              className="bg-charcoal text-alabaster px-3 py-1.5 text-base font-semibold min-h-[44px] font-semibold tracking-wider font-sans uppercase tracking-widest font-medium transition-transform active:scale-95"
             >
               Book
             </button>
@@ -519,7 +519,7 @@ export default function App() {
               className="inline-flex items-center space-x-2.5 bg-[#1C1C1A]/80 border border-[#FBFBF9]/15 px-4.5 py-1.5 mb-8 relative z-10"
             >
               <Scissors size={12} className="text-[#FBFBF9]/80 stroke-[1.5]" />
-              <span className="text-[10px] font-sans uppercase tracking-[0.25em] font-semibold text-[#FBFBF9]/95">
+              <span className="text-xs font-semibold tracking-wider font-sans uppercase tracking-[0.25em] font-semibold text-[#FBFBF9]/95">
                 Crafted Heritage in Los Angeles Since 1999
               </span>
             </motion.div>
@@ -556,7 +556,7 @@ export default function App() {
             >
               <button
                 onClick={handleBookNowClick}
-                className="w-full sm:w-auto bg-[#FBFBF9] hover:bg-[#FBFBF9]/90 text-charcoal px-8 py-4 text-xs font-sans uppercase tracking-widest font-semibold transition-all duration-300 shadow-md active:scale-98"
+                className="w-full sm:w-auto bg-[#FBFBF9] hover:bg-[#FBFBF9]/90 text-charcoal px-8 py-4 text-base font-semibold min-h-[44px] font-sans uppercase tracking-widest font-semibold transition-all duration-300 shadow-md active:scale-98"
               >
                 Book Appointment
               </button>
@@ -588,7 +588,7 @@ export default function App() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 text-left">
-                  <span className="text-[10px] uppercase font-sans tracking-widest text-[#FBFBF9]/70 block mb-1">
+                  <span className="text-xs font-semibold tracking-wider uppercase font-sans tracking-widest text-[#FBFBF9]/70 block mb-1">
                     01 // THE PRIVATE ENCLOSURE
                   </span>
                   <span className="serif-header text-[#FBFBF9] text-xl font-medium tracking-wide">
@@ -601,18 +601,18 @@ export default function App() {
               <div className="md:col-span-4 grid grid-rows-2 gap-1">
                 <div className="bg-stone p-8 text-left flex flex-col justify-between border border-charcoal/5">
                   <div className="flex items-center justify-between">
-                    <span className="text-[10px] font-sans uppercase tracking-widest text-charcoal/40">Established</span>
+                    <span className="text-xs font-semibold tracking-wider font-sans uppercase tracking-widest text-charcoal/40">Established</span>
                     <span className="text-xs font-serif font-light italic">LA Classic</span>
                   </div>
                   <div>
                     <h3 className="serif-header text-4xl text-charcoal font-medium">1999</h3>
-                    <p className="text-[11px] uppercase tracking-widest text-charcoal/50 mt-2">Over 25 years of visual mastery</p>
+                    <p className="text-xs font-semibold uppercase tracking-widest text-charcoal/50 mt-2">Over 25 years of visual mastery</p>
                   </div>
                 </div>
 
                 <div className="bg-charcoal text-alabaster p-8 text-left flex flex-col justify-between">
                   <div className="flex items-center justify-between">
-                    <span className="text-[10px] font-sans tracking-widest text-white/40">Grooming Standard</span>
+                    <span className="text-xs font-semibold tracking-wider font-sans tracking-widest text-white/40">Grooming Standard</span>
                     <Star size={14} className="text-amber-400 fill-amber-400" />
                   </div>
                   <div>
@@ -620,7 +620,7 @@ export default function App() {
                       <span className="serif-header text-4xl font-semi">4.9</span>
                       <span className="text-xs text-white/50">/ 5.0</span>
                     </div>
-                    <p className="text-[11px] uppercase tracking-widest text-white/60 mt-2">Based on 1,200+ local client reviews</p>
+                    <p className="text-xs font-semibold uppercase tracking-widest text-white/60 mt-2">Based on 1,200+ local client reviews</p>
                   </div>
                 </div>
               </div>
@@ -637,7 +637,7 @@ export default function App() {
             {/* Header */}
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-16">
               <div className="max-w-xl text-left">
-                <span className="text-[10px] uppercase font-sans tracking-[0.25em] text-charcoal/50 block mb-3 font-semibold">
+                <span className="text-xs font-semibold tracking-wider uppercase font-sans tracking-[0.25em] text-charcoal/50 block mb-3 font-semibold">
                   01 // VISUAL PORTFOLIO
                 </span>
                 <h2 className="serif-header text-4xl md:text-5xl text-charcoal font-extralight tracking-tight">
@@ -645,7 +645,7 @@ export default function App() {
                 </h2>
                 <div className="w-16 h-[1px] bg-charcoal/30 mt-6 md:hidden"></div>
               </div>
-              <p className="text-xs md:text-sm text-charcoal/60 font-light font-sans max-w-sm mt-6 md:mt-0 leading-relaxed text-left">
+              <p className="text-base font-semibold text-charcoal/60 font-light font-sans max-w-sm mt-6 md:mt-0 leading-relaxed text-left">
                 Forget raw Instagram screenshots. We hold our hair designs to high editorial standards. View real, highly-focused, premium cuts curated directly inside the studio.
               </p>
             </div>
@@ -686,7 +686,7 @@ export default function App() {
 
                     {/* Dynamic hover reveal cue */}
                     <div className="absolute inset-0 bg-charcoal/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                      <span className="bg-alabaster/90 text-charcoal text-[10px] font-sans font-semibold uppercase tracking-widest px-4 py-2 border border-charcoal/15 shadow-md">
+                      <span className="bg-alabaster/90 text-charcoal text-xs font-semibold tracking-wider font-sans font-semibold uppercase tracking-widest px-4 py-2 border border-charcoal/15 shadow-md">
                         Click to Zoom
                       </span>
                     </div>
@@ -697,7 +697,7 @@ export default function App() {
                     <h3 className="serif-header text-2xl font-light text-charcoal group-hover:opacity-85 transition-opacity">
                       {item.title}
                     </h3>
-                    <span className="text-[10px] font-mono text-charcoal/40 tracking-wider">
+                    <span className="text-xs font-semibold tracking-wider font-mono text-charcoal/40 tracking-wider">
                       DC-{String(item.id).padStart(2, '0')}
                     </span>
                   </div>
@@ -721,13 +721,13 @@ export default function App() {
             
             {/* Main Header */}
             <div className="max-w-2xl text-left mb-20">
-              <span className="text-[10px] uppercase font-sans tracking-[0.25em] text-charcoal/50 block mb-3 font-semibold">
+              <span className="text-xs font-semibold tracking-wider uppercase font-sans tracking-[0.25em] text-charcoal/50 block mb-3 font-semibold">
                 02 // SERVICE STANDARDS
               </span>
               <h2 className="serif-header text-4xl md:text-5xl lg:text-6xl text-charcoal font-extralight tracking-tight leading-tight">
                 Craftsmen Pillars & Rates
               </h2>
-              <p className="text-xs md:text-sm text-charcoal/60 mt-6 leading-relaxed max-w-lg font-light">
+              <p className="text-base font-semibold text-charcoal/60 mt-6 leading-relaxed max-w-lg font-light">
                 Every service at Diamond Cuts is performed by fully-licensed staff specialized in their specific pillar. We maintain clear pricing structures with absolutely no hidden fees.
               </p>
             </div>
@@ -751,7 +751,7 @@ export default function App() {
                       id={`pillar-btn-${key}`}
                     >
                       <div className="flex items-center justify-between mb-3">
-                        <span className="text-[10px] uppercase font-mono tracking-widest text-charcoal/40">
+                        <span className="text-xs font-semibold tracking-wider uppercase font-mono tracking-widest text-charcoal/40">
                           PILLAR • {value.title.toUpperCase()}
                         </span>
                         {isActive && <ChevronRight size={14} className="text-charcoal" />}
@@ -765,7 +765,7 @@ export default function App() {
                         {value.description}
                       </p>
 
-                      <div className="mt-6 flex items-center text-[10px] uppercase tracking-wider font-semibold text-charcoal/80 group">
+                      <div className="mt-6 flex items-center text-xs font-semibold tracking-wider uppercase tracking-wider font-semibold text-charcoal/80 group">
                         <span>View Rates Sheet</span>
                         <ArrowRight size={10} className="ml-1.5 transition-transform group-hover:translate-x-1" />
                       </div>
@@ -790,14 +790,14 @@ export default function App() {
                       {/* Pricing Sheet Header */}
                       <div className="flex flex-col md:flex-row md:items-baseline justify-between border-b border-charcoal/15 pb-6 mb-8">
                         <div>
-                          <span className="text-[10px] uppercase font-mono tracking-widest text-charcoal/40">
+                          <span className="text-xs font-semibold tracking-wider uppercase font-mono tracking-widest text-charcoal/40">
                             OFFICIAL PRICE SHEET
                           </span>
                           <h4 className="serif-header text-4xl text-charcoal font-medium mt-1">
                             {SERVICE_CATEGORIES[activeRateCategory as keyof typeof SERVICE_CATEGORIES].title} Rates
                           </h4>
                         </div>
-                        <p className="text-[11px] font-sans uppercase tracking-widest text-charcoal/50 mt-2 md:mt-0 font-medium">
+                        <p className="text-xs font-semibold font-sans uppercase tracking-widest text-charcoal/50 mt-2 md:mt-0 font-medium">
                           All prices include tax & finish styling
                         </p>
                       </div>
@@ -810,7 +810,7 @@ export default function App() {
                               <h5 className="text-sm font-medium text-charcoal font-sans">{svc.name}</h5>
                               <div className="flex items-center space-x-2.5 mt-1.5 text-charcoal/40 text-left">
                                 <Clock size={11} />
-                                <span className="text-[10px] tracking-wider uppercase font-mono">{svc.duration} session duration</span>
+                                <span className="text-xs font-semibold tracking-wider tracking-wider uppercase font-mono">{svc.duration} session duration</span>
                               </div>
                             </div>
                             <div className="flex items-center space-x-4 mt-3 md:mt-0 self-end md:self-center">
@@ -821,7 +821,7 @@ export default function App() {
                                   setSelectedService(svc.name);
                                   handleBookNowClick();
                                 }}
-                                className="bg-charcoal text-alabaster border border-charcoal hover:bg-transparent hover:text-charcoal px-4 py-1.5 text-[10px] uppercase font-sans tracking-widest font-semibold transition-all active:scale-95 cursor-pointer"
+                                className="bg-charcoal text-alabaster border border-charcoal hover:bg-transparent hover:text-charcoal px-4 py-1.5 text-xs font-semibold tracking-wider uppercase font-sans tracking-widest font-semibold transition-all active:scale-95 cursor-pointer"
                               >
                                 BOOK
                               </button>
@@ -834,7 +834,7 @@ export default function App() {
                       <div className="mt-12 bg-alabaster border border-charcoal/5 p-6 flex flex-col sm:flex-row items-center justify-between">
                         <div className="flex items-center space-x-3 mb-4 sm:mb-0 text-left">
                           <Info size={16} className="text-charcoal/50 shrink-0" />
-                          <p className="text-[11px] text-charcoal/60 leading-normal font-light">
+                          <p className="text-xs font-semibold text-charcoal/60 leading-normal font-light">
                             Selected category requires custom consultation for specialty requests. Simply book or walk-in.
                           </p>
                         </div>
@@ -843,7 +843,7 @@ export default function App() {
                             setSelectedCategory(activeRateCategory);
                             handleBookNowClick();
                           }}
-                          className="w-full sm:w-auto shrink-0 bg-charcoal text-alabaster px-6 py-2.5 text-[10px] font-sans uppercase tracking-wider font-semibold hover:bg-charcoal/90 transition-all text-center"
+                          className="w-full sm:w-auto shrink-0 bg-charcoal text-alabaster px-6 py-2.5 text-xs font-semibold tracking-wider font-sans uppercase tracking-wider font-semibold hover:bg-charcoal/90 transition-all text-center"
                         >
                           Book Category Now
                         </button>
@@ -868,7 +868,7 @@ export default function App() {
               
               {/* Left Column Text details */}
               <div className="lg:col-span-7 text-left lg:pr-12">
-                <span className="text-[10px] uppercase font-sans tracking-[0.25em] text-charcoal/50 block mb-3 font-semibold">
+                <span className="text-xs font-semibold tracking-wider uppercase font-sans tracking-[0.25em] text-charcoal/50 block mb-3 font-semibold">
                   03 // HISTORIC INSTITUTION
                 </span>
                 <h2 className="serif-header text-4xl md:text-5xl lg:text-6xl text-charcoal font-extralight tracking-tight mb-8">
@@ -890,15 +890,15 @@ export default function App() {
                 <div className="grid grid-cols-3 gap-6 pt-12 border-t border-charcoal/10 mt-12">
                   <div>
                     <h4 className="serif-header text-2xl text-charcoal font-medium">1999</h4>
-                    <p className="text-[10px] uppercase tracking-widest text-charcoal/50 mt-1">Founding Year</p>
+                    <p className="text-xs font-semibold tracking-wider uppercase tracking-widest text-charcoal/50 mt-1">Founding Year</p>
                   </div>
                   <div>
                     <h4 className="serif-header text-2xl text-charcoal font-medium">1,200+</h4>
-                    <p className="text-[10px] uppercase tracking-widest text-charcoal/50 mt-1">Verified Ratings</p>
+                    <p className="text-xs font-semibold tracking-wider uppercase tracking-widest text-charcoal/50 mt-1">Verified Ratings</p>
                   </div>
                   <div>
                     <h4 className="serif-header text-2xl text-charcoal font-medium">100%</h4>
-                    <p className="text-[10px] uppercase tracking-widest text-charcoal/50 mt-1">Precision Minded</p>
+                    <p className="text-xs font-semibold tracking-wider uppercase tracking-widest text-charcoal/50 mt-1">Precision Minded</p>
                   </div>
                 </div>
               </div>
@@ -934,7 +934,7 @@ export default function App() {
         {/* CLIENT TESTIMONIAL CAROUSEL */}
         <section className="py-24 px-6 bg-alabaster">
           <div className="max-w-4xl mx-auto text-center">
-            <span className="text-[10px] uppercase font-sans tracking-[0.25em] text-charcoal/50 block mb-6 font-semibold">
+            <span className="text-xs font-semibold tracking-wider uppercase font-sans tracking-[0.25em] text-charcoal/50 block mb-6 font-semibold">
               04 // PATRON DISCOURSE
             </span>
             
@@ -960,7 +960,7 @@ export default function App() {
               <span className="text-xs uppercase tracking-widest font-semibold text-charcoal">
                 {testimonials[activeTestimonial].author}
               </span>
-              <span className="text-[10px] uppercase tracking-widest text-charcoal/40 font-mono mt-1">
+              <span className="text-xs font-semibold tracking-wider uppercase tracking-widest text-charcoal/40 font-mono mt-1">
                 {testimonials[activeTestimonial].role}
               </span>
             </div>
@@ -991,7 +991,7 @@ export default function App() {
               {/* Left Column: Essential details & Interactive Contact formulation */}
               <div className="lg:col-span-6 flex flex-col space-y-10">
                 <div>
-                  <span className="text-[10px] uppercase font-sans tracking-[0.25em] text-charcoal/50 block mb-3 font-semibold">
+                  <span className="text-xs font-semibold tracking-wider uppercase font-sans tracking-[0.25em] text-charcoal/50 block mb-3 font-semibold">
                     05 // ENTRANCE DETAILS
                   </span>
                   <h2 className="serif-header text-4xl md:text-5xl text-charcoal font-extralight tracking-tight">
@@ -1004,7 +1004,7 @@ export default function App() {
                   <div className="space-y-3">
                     <div className="flex items-center space-x-2 text-charcoal/40">
                       <MapPin size={14} />
-                      <span className="text-[10px] tracking-widest uppercase font-semibold">HQ LOCATION</span>
+                      <span className="text-xs font-semibold tracking-wider tracking-widest uppercase font-semibold">HQ LOCATION</span>
                     </div>
                     <p className="text-xs text-charcoal font-medium font-sans leading-relaxed">
                       4916 W. Slauson Ave,<br />
@@ -1014,7 +1014,7 @@ export default function App() {
                       href="https://maps.google.com/?q=4916+W.+Slauson+Ave,+Los+Angeles,+CA+90056" 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      className="inline-flex items-center space-x-1.5 text-[10px] uppercase tracking-wider font-semibold text-charcoal hover:opacity-75 pt-1.5 border-b border-charcoal/30 pb-0.5 leading-none"
+                      className="inline-flex items-center space-x-1.5 text-xs font-semibold tracking-wider uppercase tracking-wider font-semibold text-charcoal hover:opacity-75 pt-1.5 border-b border-charcoal/30 pb-0.5 leading-none"
                     >
                       <span>Get Directions</span>
                       <ExternalLink size={10} />
@@ -1024,7 +1024,7 @@ export default function App() {
                   <div className="space-y-3">
                     <div className="flex items-center space-x-2 text-charcoal/40">
                       <Phone size={14} />
-                      <span className="text-[10px] tracking-widest uppercase font-semibold">CALL INQUIRIES</span>
+                      <span className="text-xs font-semibold tracking-wider tracking-widest uppercase font-semibold">CALL INQUIRIES</span>
                     </div>
                     <p className="text-xs text-charcoal font-medium font-sans leading-relaxed">
                       Direct Studio Desk:<br />
@@ -1032,7 +1032,7 @@ export default function App() {
                     </p>
                     <a 
                       href="tel:323-815-1858" 
-                      className="inline-flex items-center space-x-1.5 text-[10px] uppercase tracking-wider font-semibold text-charcoal hover:opacity-75 pt-1.5 border-b border-charcoal/30 pb-0.5 leading-none"
+                      className="inline-flex items-center space-x-1.5 text-xs font-semibold tracking-wider uppercase tracking-wider font-semibold text-charcoal hover:opacity-75 pt-1.5 border-b border-charcoal/30 pb-0.5 leading-none"
                     >
                       <span>Dial Hotline</span>
                     </a>
@@ -1048,7 +1048,7 @@ export default function App() {
 
                   <form onSubmit={handleContactSubmit} className="space-y-4">
                     <div>
-                      <label className="block text-[10px] uppercase tracking-[0.15em] text-charcoal/60 font-semibold mb-1.5 focus-within:text-charcoal">Your Full Name</label>
+                      <label className="block text-sm font-semibold tracking-wider uppercase tracking-[0.15em] text-charcoal/60 font-semibold mb-1.5 focus-within:text-charcoal">Your Full Name</label>
                       <input 
                         type="text" 
                         required
@@ -1059,7 +1059,7 @@ export default function App() {
                       />
                     </div>
                     <div>
-                      <label className="block text-[10px] uppercase tracking-[0.15em] text-charcoal/60 font-semibold mb-1.5 focus-within:text-charcoal">Email Address</label>
+                      <label className="block text-sm font-semibold tracking-wider uppercase tracking-[0.15em] text-charcoal/60 font-semibold mb-1.5 focus-within:text-charcoal">Email Address</label>
                       <input 
                         type="email" 
                         required
@@ -1070,7 +1070,7 @@ export default function App() {
                       />
                     </div>
                     <div>
-                      <label className="block text-[10px] uppercase tracking-[0.15em] text-charcoal/60 font-semibold mb-1.5 focus-within:text-charcoal">Your Inquiry Details</label>
+                      <label className="block text-sm font-semibold tracking-wider uppercase tracking-[0.15em] text-charcoal/60 font-semibold mb-1.5 focus-within:text-charcoal">Your Inquiry Details</label>
                       <textarea 
                         rows={3}
                         required
@@ -1083,7 +1083,7 @@ export default function App() {
 
                     <button
                       type="submit"
-                      className="w-full bg-[#1C1C1A] text-alabaster py-3.5 text-xs font-sans uppercase tracking-[0.2em] font-semibold transition-all duration-300 hover:bg-[#2C2C2A] hover:tracking-[0.25em] cursor-pointer shadow-md active:scale-[0.98] border border-transparent"
+                      className="w-full bg-[#1C1C1A] text-alabaster py-3.5 text-base font-semibold min-h-[44px] font-sans uppercase tracking-[0.2em] font-semibold transition-all duration-300 hover:bg-[#2C2C2A] hover:tracking-[0.25em] cursor-pointer shadow-md active:scale-[0.98] border border-transparent"
                     >
                       SEND MESSAGE
                     </button>
@@ -1094,7 +1094,7 @@ export default function App() {
                           initial={{ opacity: 0, y: 5 }}
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0 }}
-                          className="bg-emerald-500/10 border border-emerald-500/20 text-emerald-800 text-[11px] p-3 text-center mt-3"
+                          className="bg-emerald-500/10 border border-emerald-500/20 text-emerald-800 text-xs font-semibold p-3 text-center mt-3"
                         >
                           Thank you. Your message has been routed to our office successfully.
                         </motion.div>
@@ -1115,7 +1115,7 @@ export default function App() {
                   <div>
                     <div className="flex items-center justify-between border-b border-white/10 pb-6 mb-8">
                       <div>
-                        <span className="text-[10px] uppercase tracking-widest text-white/40 block font-mono font-medium">
+                        <span className="text-xs font-semibold tracking-wider uppercase tracking-widest text-white/40 block font-mono font-medium">
                           RESPECTING YOUR TIME
                         </span>
                         <h3 className="serif-header text-3xl font-light text-alabaster mt-1">
@@ -1160,19 +1160,19 @@ export default function App() {
                       </div>
                       <div className="flex items-center justify-between py-2 border-b border-white/5">
                         <span className="font-light text-white/60">Sunday</span>
-                        <span className="font-medium text-white/40 font-mono text-[10px] tracking-widest uppercase">Closed</span>
+                        <span className="font-medium text-white/40 font-mono text-xs font-semibold tracking-wider tracking-widest uppercase">Closed</span>
                       </div>
                     </div>
                   </div>
 
                   {/* Immediate Book call action */}
                   <div className="mt-12 pt-8 border-t border-white/10 text-left">
-                    <p className="text-[11px] text-white/50 leading-relaxed font-light mb-6">
+                    <p className="text-xs font-semibold text-white/50 leading-relaxed font-light mb-6">
                       For primary consideration, we highly request booking your slots in advance below. Walk-ins are accommodated based on specialist availability.
                     </p>
                     <button
                       onClick={handleBookNowClick}
-                      className="w-full bg-[#FBFBF9] text-[#1C1C1A] border border-[#FBFBF9] hover:bg-transparent hover:text-[#FBFBF9] py-4 text-xs font-sans uppercase tracking-widest font-semibold transition-all duration-300 text-center"
+                      className="w-full bg-[#FBFBF9] text-[#1C1C1A] border border-[#FBFBF9] hover:bg-transparent hover:text-[#FBFBF9] py-4 text-base font-semibold min-h-[44px] font-sans uppercase tracking-widest font-semibold transition-all duration-300 text-center"
                     >
                       Book Free Appointment Slot
                     </button>
@@ -1201,7 +1201,7 @@ export default function App() {
             </span>
           </div>
 
-          <p className="text-[10px] text-white/40 tracking-widest uppercase font-mono mt-2 md:mt-0 max-w-sm text-left leading-relaxed">
+          <p className="text-xs font-semibold tracking-wider text-white/40 tracking-widest uppercase font-mono mt-2 md:mt-0 max-w-sm text-left leading-relaxed">
             4916 W. Slauson Ave, Los Angeles, CA 90056 • EST. 1999 • ARCHITECTURAL LUXURY HAIR DESIGN
           </p>
 
@@ -1278,17 +1278,17 @@ export default function App() {
                 {bookingStep < 3 && (
                   <div className="flex items-center space-x-6 mb-8 border-b border-charcoal/5 pb-4">
                     <div className="flex items-center space-x-2">
-                      <span className={`w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-semibold ${
+                      <span className={`w-5 h-5 rounded-full flex items-center justify-center text-xs font-semibold tracking-wider font-semibold ${
                         bookingStep === 1 ? 'bg-charcoal text-alabaster' : 'bg-charcoal/10 text-charcoal'
                       }`}>1</span>
-                      <span className="text-[10px] font-sans uppercase tracking-widest font-semibold text-charcoal">Select Craft</span>
+                      <span className="text-xs font-semibold tracking-wider font-sans uppercase tracking-widest font-semibold text-charcoal">Select Craft</span>
                     </div>
                     <div className="h-[1px] bg-charcoal/10 flex-grow"></div>
                     <div className="flex items-center space-x-2">
-                      <span className={`w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-semibold ${
+                      <span className={`w-5 h-5 rounded-full flex items-center justify-center text-xs font-semibold tracking-wider font-semibold ${
                         bookingStep === 2 ? 'bg-charcoal text-alabaster' : 'bg-charcoal/10 text-charcoal'
                       }`}>2</span>
-                      <span className="text-[10px] font-sans uppercase tracking-widest font-semibold text-charcoal">Pre-Check & Client Info</span>
+                      <span className="text-xs font-semibold tracking-wider font-sans uppercase tracking-widest font-semibold text-charcoal">Pre-Check & Client Info</span>
                     </div>
                   </div>
                 )}
@@ -1299,7 +1299,7 @@ export default function App() {
                     
                     {/* Select Pillar Category */}
                     <div>
-                      <label className="block text-[10px] uppercase font-sans tracking-widest text-charcoal/60 mb-2 font-semibold">Select Craft Artistry</label>
+                      <label className="block text-sm font-semibold tracking-wider uppercase font-sans tracking-widest text-charcoal/60 mb-2 font-semibold">Select Craft Artistry</label>
                       <div className="grid grid-cols-2 gap-2" id="booking-pillar-list">
                         {Object.entries(SERVICE_CATEGORIES).map(([key, cat]) => (
                           <button
@@ -1323,7 +1323,7 @@ export default function App() {
 
                     {/* Select Service Item */}
                     <div>
-                      <label className="block text-[10px] uppercase font-sans tracking-widest text-charcoal/60 mb-2 font-semibold">Select Service Layout</label>
+                      <label className="block text-sm font-semibold tracking-wider uppercase font-sans tracking-widest text-charcoal/60 mb-2 font-semibold">Select Service Layout</label>
                       <div className="space-y-2 max-h-48 overflow-y-auto pr-1 border border-charcoal/5 p-1 bg-stone/30">
                         {selectedCategoryData.services.map((svc, i) => (
                           <button
@@ -1348,7 +1348,7 @@ export default function App() {
 
                     {/* Select Specialist */}
                     <div>
-                      <label className="block text-[10px] uppercase font-sans tracking-widest text-charcoal/60 mb-2 font-semibold font-semibold">Select Specialist Expert</label>
+                      <label className="block text-sm font-semibold tracking-wider uppercase font-sans tracking-widest text-charcoal/60 mb-2 font-semibold font-semibold">Select Specialist Expert</label>
                       <div className="space-y-2">
                         {SPECIALISTS.map((spec) => (
                           <button
@@ -1375,7 +1375,7 @@ export default function App() {
 
                     {/* Calendar Date Selector Grid */}
                     <div className="space-y-2">
-                      <label className="block text-[10px] uppercase font-sans tracking-widest text-[#1C1C1A]/60 font-semibold" id="label-booking-date">
+                      <label className="block text-sm font-semibold tracking-wider uppercase font-sans tracking-widest text-[#1C1C1A]/60 font-semibold" id="label-booking-date">
                         Select Appointment Date (Calendar Grid)
                       </label>
                       <div className="grid grid-cols-2 min-[400px]:grid-cols-3 sm:grid-cols-4 gap-2" id="booking-datepicker-grid">
@@ -1409,7 +1409,7 @@ export default function App() {
 
                     {/* Clock Hour Grid Selector */}
                     <div className="space-y-2">
-                      <label className="block text-[10px] uppercase font-sans tracking-widest text-[#1C1C1A]/60 font-semibold" id="label-booking-time">
+                      <label className="block text-sm font-semibold tracking-wider uppercase font-sans tracking-widest text-[#1C1C1A]/60 font-semibold" id="label-booking-time">
                         Select Shift Hour Grid
                       </label>
                       <div className="grid grid-cols-2 min-[400px]:grid-cols-3 sm:grid-cols-4 gap-2" id="booking-timepicker-grid">
@@ -1428,7 +1428,7 @@ export default function App() {
                               key={time}
                               type="button"
                               onClick={() => setBookingTime(time)}
-                              className={`p-2.5 text-center border text-[11px] font-mono tracking-wider transition-all cursor-pointer ${
+                              className={`p-2.5 text-center border text-xs font-semibold font-mono tracking-wider transition-all cursor-pointer ${
                                 isSelected
                                   ? 'border-charcoal bg-stone font-semibold text-charcoal'
                                   : 'border-charcoal/5 bg-transparent hover:border-charcoal/15 text-charcoal/80'
@@ -1487,7 +1487,7 @@ export default function App() {
                     {/* Personal inputs */}
                     <div className="space-y-4">
                       <div>
-                        <label className="block text-[10px] uppercase tracking-widest text-charcoal/60 mb-2 font-semibold">Your Full Name</label>
+                        <label className="block text-sm font-semibold tracking-wider uppercase tracking-widest text-charcoal/60 mb-2 font-semibold">Your Full Name</label>
                         <input 
                           type="text" 
                           required
@@ -1499,7 +1499,7 @@ export default function App() {
                       </div>
 
                       <div>
-                        <label className="block text-[10px] uppercase tracking-widest text-charcoal/60 mb-2 font-semibold font-semibold">Mobile Phone (For Alerts)</label>
+                        <label className="block text-sm font-semibold tracking-wider uppercase tracking-widest text-charcoal/60 mb-2 font-semibold font-semibold">Mobile Phone (For Alerts)</label>
                         <input 
                           type="tel" 
                           required
@@ -1511,7 +1511,7 @@ export default function App() {
                       </div>
 
                       <div>
-                        <label className="block text-[10px] uppercase tracking-widest text-charcoal/60 mb-2 font-semibold">Email Address</label>
+                        <label className="block text-sm font-semibold tracking-wider uppercase tracking-widest text-charcoal/60 mb-2 font-semibold">Email Address</label>
                         <input 
                           type="email" 
                           required
@@ -1534,7 +1534,7 @@ export default function App() {
                       </button>
                       <button
                         type="submit"
-                        className="bg-charcoal hover:bg-charcoal/90 text-alabaster py-3 text-center text-xs uppercase tracking-widest font-semibold"
+                        className="bg-charcoal hover:bg-charcoal/90 text-alabaster py-3 text-center text-base font-semibold min-h-[44px] uppercase tracking-widest font-semibold"
                       >
                         Confirm Slot
                       </button>
@@ -1567,11 +1567,11 @@ export default function App() {
                     {/* Receipt print card */}
                     <div className="bg-stone border border-charcoal/10 p-6 text-left max-w-xs mx-auto space-y-4">
                       <div className="border-b border-charcoal/10 pb-3 flex justify-between items-baseline">
-                        <span className="text-[10px] uppercase font-mono tracking-widest text-charcoal/40">RECEIPT TICKET</span>
+                        <span className="text-xs font-semibold tracking-wider uppercase font-mono tracking-widest text-charcoal/40">RECEIPT TICKET</span>
                         <span className="text-xs font-semibold text-charcoal">#{Math.floor(Math.random() * 90000 + 10000)}</span>
                       </div>
 
-                      <div className="space-y-2 text-[11px] font-sans">
+                      <div className="space-y-2 text-xs font-semibold font-sans">
                         <p><strong className="font-semibold uppercase tracking-wider text-[9px] text-charcoal/50 block">PATRON:</strong> {customerName}</p>
                         <p><strong className="font-semibold uppercase tracking-wider text-[9px] text-charcoal/50 block">CRAFT FINISH:</strong> {selectedService}</p>
                         <p><strong className="font-semibold uppercase tracking-wider text-[9px] text-charcoal/50 block">SPECIALIST:</strong> {SPECIALISTS.find(s => s.id === selectedSpecialist)?.name}</p>
@@ -1698,7 +1698,7 @@ export default function App() {
                     <span className="bg-charcoal text-alabaster text-[9px] font-sans font-semibold uppercase tracking-widest px-3 py-1.5 inline-block">
                       {zoomedItem.category}
                     </span>
-                    <span className="ml-3 text-[10px] font-mono text-charcoal/40 tracking-wider">
+                    <span className="ml-3 text-xs font-semibold tracking-wider font-mono text-charcoal/40 tracking-wider">
                       DC-{String(zoomedItem.id).padStart(2, '0')}
                     </span>
                   </div>
@@ -1772,7 +1772,7 @@ export default function App() {
               {/* 1-Click Auto-Fill Demo Passcode Cheat Code */}
               <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-3.5 mb-6 flex items-center justify-between">
                 <div>
-                  <span className="text-[10px] uppercase font-mono tracking-widest text-amber-400 block font-semibold">
+                  <span className="text-xs font-semibold tracking-wider uppercase font-mono tracking-widest text-amber-400 block font-semibold">
                     1-CLICK CHEAT CODE (BUYER PREVIEW)
                   </span>
                   <span className="text-xs font-mono font-bold text-white tracking-wider">
@@ -1793,7 +1793,7 @@ export default function App() {
 
               <form onSubmit={handleAdminUnlock} className="space-y-4">
                 <div>
-                  <label className="block text-[11px] font-mono uppercase tracking-wider text-stone-400 mb-1">
+                  <label className="block text-sm font-semibold font-mono uppercase tracking-wider text-stone-400 mb-1">
                     Atelier Passkey
                   </label>
                   <input
@@ -1816,7 +1816,7 @@ export default function App() {
                   </button>
                   <button
                     type="submit"
-                    className="flex-1 py-2.5 bg-amber-500 hover:bg-amber-400 text-black font-semibold text-xs uppercase tracking-widest font-mono rounded-lg transition-all shadow cursor-pointer active:scale-95"
+                    className="flex-1 py-2.5 bg-amber-500 hover:bg-amber-400 text-black font-semibold text-base font-semibold min-h-[44px] uppercase tracking-widest font-mono rounded-lg transition-all shadow cursor-pointer active:scale-95"
                   >
                     Enter Control Room
                   </button>
