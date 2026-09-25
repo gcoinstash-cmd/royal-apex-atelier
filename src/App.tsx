@@ -1829,7 +1829,7 @@ export default function App() {
 
       {/* TOAST SYSTEM */}
       <AnimatePresence>
-        {toastMessage && (
+        {toastMsg && (
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -1837,7 +1837,7 @@ export default function App() {
             className="fixed bottom-6 right-6 z-50 bg-[#1C1C1A] text-white border border-amber-500/40 px-5 py-3.5 rounded-xl shadow-2xl flex items-center space-x-3"
           >
             <span className="w-2 h-2 rounded-full bg-amber-400 animate-ping" />
-            <span className="text-xs font-mono tracking-wide">{toastMessage}</span>
+            <span className="text-xs font-mono tracking-wide">{toastMsg}</span>
           </motion.div>
         )}
       </AnimatePresence>
